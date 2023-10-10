@@ -4,13 +4,13 @@
     --purple: #581c87;
     --lightpurple: #7e22ce;
     --white: #faf5ff;
-    --neutral: #e5e7eb;
+    --neutral: #f3e8ff;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 250px 1fr;
     min-height: 100vh;
 }
 
@@ -26,6 +26,9 @@ img {
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / -1;
     background-color: var(--white);
+    padding-bottom: 10px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    z-index: 1;
 }
 
 .upper-header, .lower-header {
@@ -61,9 +64,6 @@ img {
     align-items: center;
 }
 
-.lower-header {
-    padding-bottom: 20px;
-}
 
 .greet {
     display: flex;
@@ -168,16 +168,68 @@ button:hover {
 /*main----------------------------------------------------------*/
 
 .main-area {
+    font-size: 0.9rem;
     display: grid;
     background-color: var(--neutral);
     grid-column: 2 / 3;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 10fr;
 }
 
+.main-area>h3 {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: left;
+    padding-left: 30px;
+    align-items: center;
+}
+    
 .main-area>.projects {
     grid-column: 1 / 3;
 }
 
 .main-area>.sidebar-right {
     grid-column: -1 / -2;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 30px 30px 30px;
+    gap: 15px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 0.7fr 1fr 0.6fr;
+    font-size: 1.1rem;
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: 5px 5px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+}
+
+.card>h4 { 
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.card>.color-block {
+    background-color: var(--purple);
+    grid-row: 1 / -1;
+    border-radius: 20px 0 0 20px;
+    width: 75%;
+}
+
+.card-action-buttons {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    gap: 15px;
 }
