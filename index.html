@@ -11,9 +11,82 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">Hi there, User</div>
+        <div class="header">
+            <div class="upper-header">
+                <div class="search-bar">
+                    <img src="/icons/magnify.svg" alt="search">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-buttons">
+                    <img src="/icons/bell-outline.svg" alt="bell">
+                    <img src="/profile-pic.jpg" alt="profile-pic" id="profile-pic-small">
+                    <p>Chilli Pance-Zach</p>
+                </div>
+            </div>
+            <div class="lower-header">
+                <div class="greet">
+                    <div class="greet-image">
+                        <img src="/profile-pic.jpg" alt="profile-pic" id="profile-pic-big">
+                    </div>
+                    <div class="greet-text">
+                        <p class="greet-text-upper">Hi there,</p>
+                        <p class="greet-text-lower">Chilli Pance-Zach</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button type="button">New</button>
+                    <button type="button">Upload</button>
+                    <button type="button">Share</button>
+                </div>
+            </div>
+        </div>
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
+            <div class="logo-container">
+                <img src="/icons/dog-side.svg" alt="dog-side" class="logo-icon">
+                <div class="logo-text">Dashboard</div>
+            </div>
+            <nav class="sidebar-links">
+                <ul class="main-links">
+                    <li class="link" id="home">
+                        <img src="/icons/home.svg" alt="Home">
+                        <p>Home</p>
+                    </li>
+                    <li class="link" id="profile">
+                        <img src="/icons/card-account-details.svg" alt="profile">
+                        <p>Profile</p>
+                    </li>
+                    <li class="link" id="messages">
+                        <img src="/icons/message.svg" alt="message">
+                        <p>Messages</p>
+                    </li>
+                    <li class="link" id="history">
+                        <img src="/icons/history.svg" alt="history">
+                        <p>History</p>
+                    </li>
+                    <li class="link" id="tasks">
+                        <img src="/icons/format-list-checks.svg" alt="tasks">
+                        <p>Tasks</p>
+                    </li>
+                    <li class="link" id="communities">
+                        <img src="/icons/account-group.svg" alt="communities">
+                        <p>Communities</p>
+                    </li>
+                </ul>
+                <ul class="secondary-links">
+                    <li class="link" id="settings">
+                        <img src="/icons/cog.svg" alt="settings">
+                        <p>Settings</p>
+                    </li>
+                    <li class="link" id="support">
+                        <img src="/icons/help-circle.svg" alt="support">
+                        <p>Support</p>
+                    </li>
+                    <li class="link" id="privacy">
+                        <img src="/icons/lock.svg" alt="Privacy">
+                        <p>Privacy</p>
+                        </li>
+                </ul>
+            </nav>
         </div>
         <div class="main-area">
             <div class="projects">
@@ -27,10 +100,6 @@
             <div class="sidebar-right"> ASD
             </div>
         </div>
-        <div class="footer">
-            Copyright AP 2023.
-        </div>
     </div>
-    
 </body>
 </html>
