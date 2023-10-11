@@ -157,6 +157,8 @@ button:hover {
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: left;
+    padding-left: 30px;
 }
 
 
@@ -176,11 +178,11 @@ button:hover {
     grid-template-rows: 1fr 10fr;
 }
 
-.main-area>h3 {
+.section-title {
     display: flex;
     font-size: 1.5rem;
     justify-content: left;
-    padding-left: 30px;
+    padding: 10px 30px;
     align-items: center;
 }
     
@@ -203,7 +205,7 @@ button:hover {
 .card {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: 0.7fr 1fr 0.6fr;
+    grid-template-rows: 0.4fr 1fr 0.3fr;
     font-size: 1.1rem;
     background-color: var(--white);
     border-radius: 25px;
@@ -212,9 +214,6 @@ button:hover {
 
 .card-title {
     font-size: 1.3rem;
-}
-
-.card>h4 { 
     margin: 0;
     display: flex;
     align-items: center;
@@ -232,4 +231,65 @@ button:hover {
     justify-content: end;
     padding-right: 30px;
     gap: 15px;
+}
+
+/*sidebar-right.-------------------*/
+
+.sidebar-right {
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements>.section-title {
+    align-items: start;
+}
+
+.announcements-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--white);
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 5px 5px;
+    border-radius: 25px;
+}
+
+.announce {
+    border-bottom: 1px solid lightgray;
+}
+
+.announce:last-of-type {
+    border-bottom: none;
+}
+
+.trending-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    background-color: var(--white);
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 5px 5px;
+    border-radius: 25px;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 10px;
+}
+
+.user-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend-content>.username {
+    font-weight: 600;
+}
+
+.trend-content>.project-name {
+    font-style: italic;
 }
